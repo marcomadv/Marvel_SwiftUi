@@ -26,6 +26,8 @@
 		A9F2A74B2B000DE2003C141F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A74A2B000DE2003C141F /* DetailViewModel.swift */; };
 		A9F2A74D2B00D137003C141F /* PrincipalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A74C2B00D137003C141F /* PrincipalRowView.swift */; };
 		A9F2A7502B00D59D003C141F /* MockDataCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A74F2B00D59D003C141F /* MockDataCharacter.swift */; };
+		A9F2A7532B00F955003C141F /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7522B00F955003C141F /* DetailRowView.swift */; };
+		A9F2A7552B00F979003C141F /* MockDataSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7542B00F979003C141F /* MockDataSeries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		A9F2A74A2B000DE2003C141F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		A9F2A74C2B00D137003C141F /* PrincipalRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalRowView.swift; sourceTree = "<group>"; };
 		A9F2A74F2B00D59D003C141F /* MockDataCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataCharacter.swift; sourceTree = "<group>"; };
+		A9F2A7522B00F955003C141F /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
+		A9F2A7542B00F979003C141F /* MockDataSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataSeries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 			children = (
 				A9F2A7042AFF9B23003C141F /* Preview Assets.xcassets */,
 				A9F2A74F2B00D59D003C141F /* MockDataCharacter.swift */,
+				A9F2A7542B00F979003C141F /* MockDataSeries.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				A9F2A7472B000DCD003C141F /* DetailView.swift */,
+				A9F2A7512B00F941003C141F /* Row */,
 				A9F2A7492B000DD2003C141F /* ViewModel */,
 			);
 			path = DetailView;
@@ -267,6 +273,14 @@
 			isa = PBXGroup;
 			children = (
 				A9F2A74C2B00D137003C141F /* PrincipalRowView.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		A9F2A7512B00F941003C141F /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2A7522B00F955003C141F /* DetailRowView.swift */,
 			);
 			path = Row;
 			sourceTree = "<group>";
@@ -409,11 +423,13 @@
 				A9F2A7312AFF9D5C003C141F /* BaseRequest.swift in Sources */,
 				A9F2A7422AFFF139003C141F /* ApiCalls.swift in Sources */,
 				A9F2A7482B000DCD003C141F /* DetailView.swift in Sources */,
+				A9F2A7532B00F955003C141F /* DetailRowView.swift in Sources */,
 				A9F2A7452AFFF6DB003C141F /* PrincipalViewModel.swift in Sources */,
 				A9F2A74B2B000DE2003C141F /* DetailViewModel.swift in Sources */,
 				A9F2A6FD2AFF9B22003C141F /* Marvel_SwifUiApp.swift in Sources */,
 				A9F2A72F2AFF9CA7003C141F /* MD5Converter.swift in Sources */,
 				A9F2A73D2AFFE775003C141F /* Thumbnail.swift in Sources */,
+				A9F2A7552B00F979003C141F /* MockDataSeries.swift in Sources */,
 				A9F2A73F2AFFED3F003C141F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

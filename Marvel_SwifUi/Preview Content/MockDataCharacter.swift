@@ -15,6 +15,3 @@ struct MockDataCharacter{
     
     let characterThree = Character(id: 1017109, name: "Black Widow/Natasha Romanoff (MAA)", description: "Natasha Romanoff, also known as Black Widow, is a world-renowned super spy and one of S.H.I.E.L.D.'s top agents. Her hand-to-hand combat skills, intelligence, and unpredictability make her a deadly secret weapon. True to her mysterious nature, Black Widow comes and goes as she pleases, but always appears exactly when her particular skills are needed.", thumbnail: Thumbnail(path: "http://i.annihil.us/u/prod/marvel/i/mg/a/03/523219743a99b", thumbnailExtension: "jpg"))
 }
-
-
-

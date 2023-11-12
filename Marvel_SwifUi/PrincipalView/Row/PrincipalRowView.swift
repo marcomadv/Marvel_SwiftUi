@@ -29,9 +29,10 @@ struct PrincipalRowView: View {
                     .cornerRadius(5)
                     .foregroundColor(.white)
                     .bold()
-                    .padding([.top], 115)
+                    .padding([.top], 120)
            )} placeholder: {
                 ProgressView()
+                   .frame(width: 200, height: 200, alignment: .center)
             }
         }
         .padding([.top, .bottom], 10)

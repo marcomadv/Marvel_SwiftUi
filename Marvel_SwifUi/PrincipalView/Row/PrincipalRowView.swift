@@ -18,7 +18,8 @@ struct PrincipalRowView: View {
                     .resizable()
                     .frame(width: 300, height: 300, alignment: .center)
                     .cornerRadius(30)
-                    .opacity(0.8)
+                    .opacity(0.7)
+                    .shadow(color: .gray, radius: 10, x: 10, y:5)
                     .overlay(
                         Text(character.name ?? "")
                             .font(.title3).background(.gray).cornerRadius(5)
@@ -29,6 +30,7 @@ struct PrincipalRowView: View {
                 ProgressView()
             }
         }
+        .padding([.top, .bottom], 5)
     }
 }
 

@@ -19,7 +19,7 @@ struct DetailRowView: View {
                     .opacity(0.7)
                     .overlay(
                         Text(serie.title ?? "")
-                            .font(.title).background(.gray).cornerRadius(5)
+                            .font(.title2).background(.gray).cornerRadius(5)
                             .foregroundColor(.black)
                             .bold()
                     )
@@ -36,6 +36,7 @@ struct DetailRowView: View {
                     .padding(.top, 600)
             }
         }
+        .padding([.top, .bottom], 15)
     }
 }
 

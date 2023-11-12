@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,28 +19,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarvelLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Msk-t4-7df">
-                                <rect key="frame" x="76" y="319" width="240" height="128"/>
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="yPm-eZ-MDU">
-                                <rect key="frame" x="186" y="491" width="20" height="20"/>
-                                <color key="color" systemColor="systemOrangeColor"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Msk-t4-7df" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="76" id="46z-T8-zMe"/>
                             <constraint firstItem="VB4-35-yos" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6Lk-93-nWw"/>
-                            <constraint firstItem="Msk-t4-7df" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="260" id="JUl-Jx-AvM"/>
+                            <constraint firstItem="Msk-t4-7df" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="303" id="JUl-Jx-AvM"/>
                             <constraint firstItem="VB4-35-yos" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="Lhv-SZ-2Ij"/>
                             <constraint firstItem="VB4-35-yos" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="VIF-Rm-UNk"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="yPm-eZ-MDU" secondAttribute="bottom" constant="307" id="hVO-EM-hWl"/>
-                            <constraint firstItem="yPm-eZ-MDU" firstAttribute="top" secondItem="Msk-t4-7df" secondAttribute="bottom" constant="44" id="ieX-nj-O79"/>
-                            <constraint firstItem="yPm-eZ-MDU" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="186" id="maF-vb-Rdh"/>
                             <constraint firstAttribute="bottom" secondItem="VB4-35-yos" secondAttribute="bottom" id="nWP-vA-3wh"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="Msk-t4-7df" secondAttribute="trailing" constant="77" id="uhd-9i-GyZ"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="yPm-eZ-MDU" secondAttribute="trailing" constant="187" id="wHL-G6-d0o"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="Msk-t4-7df" secondAttribute="bottom" constant="371" id="zaL-oT-o3Z"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="Msk-t4-7df" secondAttribute="bottom" constant="328" id="zaL-oT-o3Z"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -53,8 +44,5 @@
     <resources>
         <image name="MarvelLogo" width="853.33331298828125" height="386.33334350585938"/>
         <image name="Wallpaper" width="266.66665649414062" height="553"/>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

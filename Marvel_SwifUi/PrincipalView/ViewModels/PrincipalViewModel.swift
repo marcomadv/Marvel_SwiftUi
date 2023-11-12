@@ -12,7 +12,10 @@ class PrincipalViewModel: ObservableObject {
     private var apiCalls: ApiCalls
     
     @Published var characters: [Character] = []
+    @Published var totalItems: Int?
+    
     private var suscriptor = Set<AnyCancellable>()
+
     
     init(apiCalls: ApiCalls = ApiCalls()) {
         self.apiCalls = apiCalls
@@ -20,23 +23,26 @@ class PrincipalViewModel: ObservableObject {
         
     }
     func loadCharacters() {
-        do {
-            try apiCalls.getCharacters(offset: self.characters.count)
-                .receive(on: DispatchQueue.main)
-                .sink { completion in
-                    switch completion {
-                    case .finished:
-                        print("Finalizada carga")
-                    case.failure(let error):
-                        print(error.localizedDescription)
+        if self.characters.count < self.totalItems ?? 0{
+            do {
+                try apiCalls.getCharacters(offset: self.characters.count)
+                    .receive(on: DispatchQueue.main)
+                    .sink { completion in
+                        switch completion {
+                        case .finished:
+                            print("Finalizada carga")
+                        case.failure(let error):
+                            print(error.localizedDescription)
+                        }
+                    } receiveValue: { [weak self] response in
+                        self?.characters .append(contentsOf: response.data?.results ?? [] )
+                        self?.totalItems = response.data?.total
                     }
-                } receiveValue: { [weak self] response in
-                    self?.characters .append(contentsOf: response.data?.results ?? [] )
-                }
-                .store(in: &suscriptor)
-
-        } catch {
-            debugPrint(error.localizedDescription)
+                    .store(in: &suscriptor)
+                
+            } catch {
+                debugPrint(error.localizedDescription)
+            }
         }
     }
     

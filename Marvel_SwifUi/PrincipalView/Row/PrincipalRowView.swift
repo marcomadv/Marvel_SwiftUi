@@ -16,7 +16,7 @@ struct PrincipalRowView: View {
             AsyncImage(url: character.thumbnail?.urlPhoto) { photo in
                 photo
                     .resizable()
-                    .frame(width: 200, height: 200, alignment: .center)
+                    .frame(width: 250, height: 250, alignment: .center)
                     .cornerRadius(30)
                     .opacity(0.85)
                     .brightness(0.07)
@@ -29,7 +29,7 @@ struct PrincipalRowView: View {
                     .cornerRadius(5)
                     .foregroundColor(.white)
                     .bold()
-                    .padding([.top], 120)
+                    .padding([.top], 155)
            )} placeholder: {
                 ProgressView()
                    .frame(width: 200, height: 200, alignment: .center)

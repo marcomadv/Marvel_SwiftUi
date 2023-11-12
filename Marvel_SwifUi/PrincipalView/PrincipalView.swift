@@ -20,6 +20,7 @@ struct PrincipalView: View {
                             DetailView(viewModel: DetailViewModel(characterID: character.id!))
                         }, label: {
                                 PrincipalRowView(character: character)
+                                .frame(minWidth: 400,minHeight: 250, alignment: .center)
                         })
                         .onAppear {
                             viewModel.loadMoreCharactersIfNeeded(character: character)
@@ -28,7 +29,7 @@ struct PrincipalView: View {
                 }
                 .listStyle(.plain)
             }
-            .navigationTitle("Marvel Heroes")
+            .navigationBarTitle("Marvel Heroes")
         }
     }
 }

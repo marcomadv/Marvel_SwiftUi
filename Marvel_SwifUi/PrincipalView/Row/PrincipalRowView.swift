@@ -16,23 +16,26 @@ struct PrincipalRowView: View {
             AsyncImage(url: character.thumbnail?.urlPhoto) { photo in
                 photo
                     .resizable()
-                    .frame(width: 300, height: 300, alignment: .center)
+                    .frame(width: 200, height: 200, alignment: .center)
                     .cornerRadius(30)
                     .opacity(0.85)
-                    .brightness(0.05)
+                    .brightness(0.07)
                     .contrast(1.15)
-                    .shadow(color: .gray, radius: 10, x: 10, y:5)
+                    .shadow(color: .black, radius: 15, x: 5, y: 5)
                     .overlay(
-                        Text(character.name ?? "")
-                            .font(.title3).background(.gray).cornerRadius(5)
-                            .foregroundColor(.black)
-                            .bold()
-                            .padding([.top], 180)
-            )} placeholder: {
+                Text(character.name ?? "")
+                    .font(.title3).background(.ultraThinMaterial)
+                    .fontWeight(.bold)
+                    .cornerRadius(5)
+                    .foregroundColor(.white)
+                    .bold()
+                    .padding([.top], 115)
+           )} placeholder: {
                 ProgressView()
             }
         }
-        .padding([.top, .bottom], 5)
+        .padding([.top, .bottom], 10)
+        
     }
 }
 

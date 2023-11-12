@@ -19,13 +19,14 @@ struct PrincipalView: View {
                         NavigationLink(destination: {
                             DetailView(viewModel: DetailViewModel(characterID: character.id!))
                         }, label: {
-                            Text(character.name ?? "noname")
+                                PrincipalRowView(character: character)
                         })
                         .onAppear {
                             viewModel.loadMoreCharactersIfNeeded(character: character)
                         }
                     }
                 }
+                .listStyle(.plain)
             }
         }
     }

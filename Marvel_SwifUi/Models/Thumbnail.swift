@@ -15,4 +15,8 @@ struct Thumbnail: Codable {
         case path
         case thumbnailExtension = "extension"
     }
+    
+    var urlPhoto: URL? {
+        return URL(string: "\(self.path ?? "").\(self.thumbnailExtension ?? "")")
+    }
 }

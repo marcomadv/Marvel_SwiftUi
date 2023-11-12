@@ -28,6 +28,7 @@ struct PrincipalView: View {
                 }
                 .listStyle(.plain)
             }
+            .navigationTitle("Marvel Heroes")
         }
     }
 }

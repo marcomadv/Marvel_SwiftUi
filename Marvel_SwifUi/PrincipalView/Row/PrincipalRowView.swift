@@ -17,9 +17,15 @@ struct PrincipalRowView: View {
                 photo
                     .resizable()
                     .frame(width: 300, height: 300, alignment: .center)
-                    .cornerRadius(25)
+                    .cornerRadius(30)
                     .opacity(0.8)
-            } placeholder: {
+                    .overlay(
+                        Text(character.name ?? "")
+                            .font(.title3).background(.gray).cornerRadius(5)
+                            .foregroundColor(.black)
+                            .bold()
+                            .padding([.top], 180)
+            )} placeholder: {
                 ProgressView()
             }
         }

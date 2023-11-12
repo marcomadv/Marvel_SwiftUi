@@ -15,11 +15,12 @@ struct DetailRowView: View {
             AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in
                 photo
                     .resizable()
+                    .frame(width: 350, height: 450, alignment: .center)
                     .cornerRadius(20)
-                    .opacity(0.7)
+                    .opacity(0.85)
                     .overlay(
                         Text(serie.title ?? "")
-                            .font(.title2).background(.gray).cornerRadius(5)
+                            .font(.title2).background(.thinMaterial).cornerRadius(5)
                             .foregroundColor(.black)
                             .bold()
                     )
@@ -27,15 +28,19 @@ struct DetailRowView: View {
                     ProgressView()
                 }
             HStack{
-                Text(serie.description ?? "")
-                    .background().opacity(0.85)
-                    .cornerRadius(5)
-                    .foregroundStyle(.black)
-                    .bold()
-                    .padding([.trailing, .leading], 15)
-                    .padding(.top, 600)
+                if serie.description != nil{
+                    Text(serie.description!)
+                        .font(.callout)
+                        .padding([.leading, .trailing], 5)
+                        .frame(width: 350, height: 150, alignment: .center)
+                        .background(.ultraThinMaterial).opacity(0.9)
+                        .cornerRadius(20)
+                        .foregroundStyle(.black)
+                        .padding(.top, 300)
+                }
             }
         }
+        .shadow(radius: 10, y: 10)
         .padding([.top, .bottom], 15)
     }
 }

@@ -16,10 +16,10 @@ struct DetailView: View {
             List{
                 ForEach(viewModel.series) { serie in
                     DetailRowView(serie: serie)
+                        .frame(minWidth: 350, idealWidth: 350, maxWidth: 350, minHeight: 450, idealHeight: 450, maxHeight: 450, alignment: .center)
                 }
             }
             .listStyle(.plain)
-            
         }
     }
 }

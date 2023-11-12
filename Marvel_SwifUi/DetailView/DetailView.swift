@@ -25,5 +25,5 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(viewModel: DetailViewModel(characterID: 1017100))
+    DetailView(viewModel: DetailViewModel(characterID: 1017109))
 }

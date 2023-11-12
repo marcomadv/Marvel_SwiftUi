@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    @StateObject var viewModel : DetailViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            ForEach(viewModel.series){ serie in
+                Text(serie.title ?? "noname")
+            }
+        }
     }
 }
 
 #Preview {
-    DetailView()
+    DetailView(viewModel: DetailViewModel(characterID: 1017100))
 }

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  PrincipalView.swift
 //  Marvel_SwifUi
 //
 //  Created by Marco Muñoz on 11/11/23.
@@ -7,18 +7,30 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PrincipalView: View {
+    
+    @StateObject var viewModel: PrincipalViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack{
+                List{
+                    ForEach(viewModel.characters){ character in
+                        NavigationLink(destination: {
+                            DetailView(viewModel: DetailViewModel(characterID: character.id!))
+                        }, label: {
+                            Text(character.name ?? "noname")
+                        })
+                        .onAppear {
+                            viewModel.loadMoreCharactersIfNeeded(character: character)
+                        }
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
-
-#Preview {
-    ContentView()
-}
+    
+    #Preview {
+        PrincipalView(viewModel: PrincipalViewModel())
+    }

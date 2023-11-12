@@ -18,7 +18,9 @@ struct PrincipalRowView: View {
                     .resizable()
                     .frame(width: 300, height: 300, alignment: .center)
                     .cornerRadius(30)
-                    .opacity(0.8)
+                    .opacity(0.85)
+                    .brightness(0.05)
+                    .contrast(1.15)
                     .shadow(color: .gray, radius: 10, x: 10, y:5)
                     .overlay(
                         Text(character.name ?? "")

@@ -10,11 +10,16 @@ import SwiftUI
 struct DetailView: View {
     
     @StateObject var viewModel : DetailViewModel
+    
     var body: some View {
-        List{
-            ForEach(viewModel.series){ serie in
-                Text(serie.title ?? "noname")
+        VStack{
+            List{
+                ForEach(viewModel.series) { serie in
+                    DetailRowView(serie: serie)
+                }
             }
+            .listStyle(.plain)
+            
         }
     }
 }

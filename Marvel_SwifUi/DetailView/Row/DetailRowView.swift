@@ -15,8 +15,8 @@ struct DetailRowView: View {
             AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in
                 photo
                     .resizable()
-                    .frame(width: .infinity, height: .infinity, alignment: .center)
-                    .opacity(0.5)
+                    .cornerRadius(20)
+                    .opacity(0.7)
                     .overlay(
                         Text(serie.title ?? "")
                             .font(.title).background(.gray).cornerRadius(5)
@@ -26,10 +26,15 @@ struct DetailRowView: View {
                 } placeholder: {
                     ProgressView()
                 }
-        }
-        HStack{
-            Text(serie.description ?? "")
-                .padding([.trailing, .leading], 15)
+            HStack{
+                Text(serie.description ?? "")
+                    .background().opacity(0.8)
+                    .cornerRadius(5)
+                    .foregroundStyle(.black)
+                    .bold()
+                    .padding([.trailing, .leading], 15)
+                    .padding(.top, 600)
+            }
         }
     }
 }

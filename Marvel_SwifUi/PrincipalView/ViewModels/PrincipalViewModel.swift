@@ -23,7 +23,7 @@ class PrincipalViewModel: ObservableObject {
         
     }
     func loadCharacters() {
-        if self.characters.count < self.totalItems ?? 0{
+        if self.characters.count < self.totalItems ?? 1 {
             do {
                 try apiCalls.getCharacters(offset: self.characters.count)
                     .receive(on: DispatchQueue.main)

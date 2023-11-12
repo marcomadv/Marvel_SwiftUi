@@ -28,7 +28,7 @@ struct DetailRowView: View {
                 }
             HStack{
                 Text(serie.description ?? "")
-                    .background().opacity(0.8)
+                    .background().opacity(0.85)
                     .cornerRadius(5)
                     .foregroundStyle(.black)
                     .bold()

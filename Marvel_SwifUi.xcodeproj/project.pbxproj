@@ -54,18 +54,18 @@
 
 /* Begin PBXFileReference section */
 		A92724072B02299500C0911B /* CornersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornersExtension.swift; sourceTree = "<group>"; };
+		A94A20FE2B02A74600464A2E /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Marvel_SwifUi.app; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUi.app; sourceTree = "<absolute>"; };
+		A94A20FF2B02A74600464A2E /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiTests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiTests.xctest; sourceTree = "<absolute>"; };
+		A94A21002B02A74600464A2E /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiUITests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiUITests.xctest; sourceTree = "<absolute>"; };
 		A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewPersonalized.swift; sourceTree = "<group>"; };
 		A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSboard.storyboard; sourceTree = "<group>"; };
-		A9F2A6F92AFF9B22003C141F /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Marvel_SwifUi.app; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUi.app; sourceTree = "<absolute>"; };
 		A9F2A6FC2AFF9B22003C141F /* Marvel_SwifUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiApp.swift; sourceTree = "<group>"; };
 		A9F2A6FE2AFF9B22003C141F /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		A9F2A7002AFF9B23003C141F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9F2A7022AFF9B23003C141F /* Marvel_SwifUi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Marvel_SwifUi.entitlements; sourceTree = "<group>"; };
 		A9F2A7042AFF9B23003C141F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A9F2A70A2AFF9B23003C141F /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiTests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiTests.xctest; sourceTree = "<absolute>"; };
 		A9F2A70E2AFF9B23003C141F /* Marvel_SwifUiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiTests.swift; sourceTree = "<group>"; };
-		A9F2A7142AFF9B23003C141F /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiUITests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiUITests.xctest; sourceTree = "<absolute>"; };
 		A9F2A7182AFF9B23003C141F /* Marvel_SwifUiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiUITests.swift; sourceTree = "<group>"; };
 		A9F2A71A2AFF9B23003C141F /* Marvel_SwifUiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9F2A72E2AFF9CA7003C141F /* MD5Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Converter.swift; sourceTree = "<group>"; };
@@ -323,7 +323,7 @@
 			packageProductDependencies = (
 			);
 			productName = Marvel_SwifUi;
-			productReference = A9F2A6F92AFF9B22003C141F /* Marvel_SwifUi.app */;
+			productReference = A94A20FE2B02A74600464A2E /* Marvel_SwifUi.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A9F2A7092AFF9B23003C141F /* Marvel_SwifUiTests */ = {
@@ -344,7 +344,7 @@
 				A95869882B02A2D2005FBDAE /* ViewInspector */,
 			);
 			productName = Marvel_SwifUiTests;
-			productReference = A9F2A70A2AFF9B23003C141F /* Marvel_SwifUiTests.xctest */;
+			productReference = A94A20FF2B02A74600464A2E /* Marvel_SwifUiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A9F2A7132AFF9B23003C141F /* Marvel_SwifUiUITests */ = {
@@ -362,7 +362,7 @@
 			);
 			name = Marvel_SwifUiUITests;
 			productName = Marvel_SwifUiUITests;
-			productReference = A9F2A7142AFF9B23003C141F /* Marvel_SwifUiUITests.xctest */;
+			productReference = A94A21002B02A74600464A2E /* Marvel_SwifUiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */

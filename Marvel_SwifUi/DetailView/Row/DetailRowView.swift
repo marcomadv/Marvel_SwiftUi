@@ -34,7 +34,7 @@ struct DetailRowView: View {
                         .padding([.leading, .trailing], 5)
                         .frame(width: 350, height: 150, alignment: .center)
                         .background(.ultraThinMaterial).opacity(0.9)
-                        .cornerRadius(20)
+                        .cornerRadius(20, corners: [.bottomLeft, .bottomRight])
                         .foregroundStyle(.black)
                         .padding(.top, 300)
                 }

@@ -31,7 +31,6 @@ struct DetailView: View {
                         .padding(.leading, 10)
                 }
             })
-            
         }
     }
 }

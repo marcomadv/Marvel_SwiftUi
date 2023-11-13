@@ -24,12 +24,14 @@ struct PrincipalRowView: View {
                     .shadow(color: .black, radius: 15, x: 5, y: 5)
                     .overlay(
                 Text(character.name ?? "")
+                    .frame(width: 250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .font(.title3).background(.ultraThinMaterial)
                     .fontWeight(.bold)
-                    .cornerRadius(5)
+                    .multilineTextAlignment(.center)
+                    .cornerRadius(30, corners: [.bottomLeft, .bottomRight])
                     .foregroundColor(.white)
                     .bold()
-                    .padding([.top], 155)
+                    .padding([.top], 200)
            )} placeholder: {
                 ProgressView()
                    .frame(width: 200, height: 200, alignment: .center)

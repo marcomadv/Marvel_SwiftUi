@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A92724082B02299500C0911B /* CornersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92724072B02299500C0911B /* CornersExtension.swift */; };
+		A95869832B02A080005FBDAE /* ProgressViewPersonalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */; };
+		A95869892B02A2D2005FBDAE /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = A95869882B02A2D2005FBDAE /* ViewInspector */; };
 		A9DACEED2B0230050082CA81 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */; };
 		A9DACEF12B023EE10082CA81 /* LaunchSboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */; };
 		A9F2A6FD2AFF9B22003C141F /* Marvel_SwifUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A6FC2AFF9B22003C141F /* Marvel_SwifUiApp.swift */; };
@@ -52,17 +54,18 @@
 
 /* Begin PBXFileReference section */
 		A92724072B02299500C0911B /* CornersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornersExtension.swift; sourceTree = "<group>"; };
+		A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewPersonalized.swift; sourceTree = "<group>"; };
 		A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSboard.storyboard; sourceTree = "<group>"; };
-		A9F2A6F92AFF9B22003C141F /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel_SwifUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F2A6F92AFF9B22003C141F /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Marvel_SwifUi.app; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUi.app; sourceTree = "<absolute>"; };
 		A9F2A6FC2AFF9B22003C141F /* Marvel_SwifUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiApp.swift; sourceTree = "<group>"; };
 		A9F2A6FE2AFF9B22003C141F /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		A9F2A7002AFF9B23003C141F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9F2A7022AFF9B23003C141F /* Marvel_SwifUi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Marvel_SwifUi.entitlements; sourceTree = "<group>"; };
 		A9F2A7042AFF9B23003C141F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A9F2A70A2AFF9B23003C141F /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_SwifUiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F2A70A2AFF9B23003C141F /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiTests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiTests.xctest; sourceTree = "<absolute>"; };
 		A9F2A70E2AFF9B23003C141F /* Marvel_SwifUiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiTests.swift; sourceTree = "<group>"; };
-		A9F2A7142AFF9B23003C141F /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_SwifUiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F2A7142AFF9B23003C141F /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiUITests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiUITests.xctest; sourceTree = "<absolute>"; };
 		A9F2A7182AFF9B23003C141F /* Marvel_SwifUiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiUITests.swift; sourceTree = "<group>"; };
 		A9F2A71A2AFF9B23003C141F /* Marvel_SwifUiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9F2A72E2AFF9CA7003C141F /* MD5Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Converter.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A95869892B02A2D2005FBDAE /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A95869812B02A068005FBDAE /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
 		A9DACEEB2B022FF10082CA81 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,18 +134,7 @@
 				A9F2A6FB2AFF9B22003C141F /* Marvel_SwifUi */,
 				A9F2A70D2AFF9B23003C141F /* Marvel_SwifUiTests */,
 				A9F2A7172AFF9B23003C141F /* Marvel_SwifUiUITests */,
-				A9F2A6FA2AFF9B22003C141F /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		A9F2A6FA2AFF9B22003C141F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A9F2A6F92AFF9B22003C141F /* Marvel_SwifUi.app */,
-				A9F2A70A2AFF9B23003C141F /* Marvel_SwifUiTests.xctest */,
-				A9F2A7142AFF9B23003C141F /* Marvel_SwifUiUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		A9F2A6FB2AFF9B22003C141F /* Marvel_SwifUi */ = {
@@ -142,6 +143,7 @@
 				A9F2A7352AFFD835003C141F /* Marvel-SwifUi-Info.plist */,
 				A9F2A7462B000DB0003C141F /* DetailView */,
 				A9F2A72B2AFF9C5F003C141F /* PrincipalView */,
+				A95869812B02A068005FBDAE /* ProgressView */,
 				A9DACEEB2B022FF10082CA81 /* LaunchScreen */,
 				A9F2A72A2AFF9C3D003C141F /* App */,
 				A9F2A7282AFF9C1E003C141F /* Resources */,
@@ -338,6 +340,9 @@
 				A9F2A70C2AFF9B23003C141F /* PBXTargetDependency */,
 			);
 			name = Marvel_SwifUiTests;
+			packageProductDependencies = (
+				A95869882B02A2D2005FBDAE /* ViewInspector */,
+			);
 			productName = Marvel_SwifUiTests;
 			productReference = A9F2A70A2AFF9B23003C141F /* Marvel_SwifUiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -393,8 +398,9 @@
 			);
 			mainGroup = A9F2A6F02AFF9B22003C141F;
 			packageReferences = (
+				A95869842B02A2CB005FBDAE /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
-			productRefGroup = A9F2A6FA2AFF9B22003C141F /* Products */;
+			productRefGroup = A9F2A6F02AFF9B22003C141F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -454,6 +460,7 @@
 				A92724082B02299500C0911B /* CornersExtension.swift in Sources */,
 				A9F2A73D2AFFE775003C141F /* Thumbnail.swift in Sources */,
 				A9F2A7552B00F979003C141F /* MockDataSeries.swift in Sources */,
+				A95869832B02A080005FBDAE /* ProgressViewPersonalized.swift in Sources */,
 				A9F2A73F2AFFED3F003C141F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -815,6 +822,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A95869842B02A2CB005FBDAE /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A95869882B02A2D2005FBDAE /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A95869842B02A2CB005FBDAE /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9F2A6F12AFF9B22003C141F /* Project object */;
 }

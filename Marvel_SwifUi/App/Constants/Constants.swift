@@ -8,6 +8,6 @@
 import Foundation
 
 struct Constants {
-    static let marvelPublicApiKey =  "Apikey Pública"
-    static let marvelPrivateApiKey = "Apikey Privada"
+    static let marvelPublicApiKey =  " Apikey Pública "
+    static let marvelPrivateApiKey = " Apikey Privada "
 }

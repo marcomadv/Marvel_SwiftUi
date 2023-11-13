@@ -14,6 +14,7 @@ class DetailViewModel: ObservableObject {
     @Published var series: [Serie] = []
     private var suscriptor = Set<AnyCancellable>()
     private var characterID: Int
+    @Published var isLoading: Bool = true
     
     init(apiCalls: ApiCalls = ApiCalls(), characterID: Int) {
         self.apiCalls = apiCalls
@@ -29,6 +30,7 @@ class DetailViewModel: ObservableObject {
                     switch completion {
                     case .finished:
                         print("Carga de datos finalizada")
+                        self.isLoading = false
                     case .failure(let error):
                         print(error.localizedDescription)
                     }

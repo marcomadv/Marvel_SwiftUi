@@ -30,7 +30,7 @@
                         <constraints>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="OWj-Wf-uvi" secondAttribute="bottom" constant="331" id="S5q-2K-JyQ"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstItem="OWj-Wf-uvi" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="330" id="VRB-ql-85O"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="OWj-Wf-uvi" secondAttribute="trailing" constant="75" id="caq-ZF-yc2"/>

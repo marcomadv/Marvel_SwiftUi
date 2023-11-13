@@ -13,24 +13,27 @@ struct DetailView: View {
     @Environment (\.presentationMode) var presentationMode
     
     var body: some View {
-        VStack{
-            ScrollView{
-                ForEach(viewModel.series) { serie in
-                    DetailRowView(serie: serie)
-                        .frame(minWidth: 350, idealWidth: 350, maxWidth: 350, minHeight: 480, idealHeight: 480, maxHeight: 480, alignment: .center)
+        if viewModel.isLoading {
+            ProgressViewPersonalized()
+        } else {
+            VStack{
+                ScrollView{
+                    ForEach(viewModel.series) { serie in
+                        DetailRowView(serie: serie)
+                            .frame(minWidth: 350, idealWidth: 350, maxWidth: 350, minHeight: 480, idealHeight: 480, maxHeight: 480, alignment: .center)
+                    }
                 }
+                .navigationBarTitle("Series", displayMode: .inline)
+                .navigationBarBackButtonHidden(true)
+                .navigationBarItems(leading:
+                                        Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    HStack {
+                        Image(systemName: "chevron.backward")
+                    }
+                })
             }
-            .navigationBarTitle("Series", displayMode: .inline)
-            .navigationBarBackButtonHidden(true)
-            .navigationBarItems(leading:
-                                    Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
-            }) {
-                HStack {
-                    Image(systemName: "chevron.backward")
-                        .padding(.leading, 10)
-                }
-            })
         }
     }
 }

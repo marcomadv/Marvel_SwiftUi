@@ -10,11 +10,10 @@ import Combine
 
 class PrincipalViewModel: ObservableObject {
     private var apiCalls: ApiCalls
-    
     @Published var characters: [Character] = []
     private var totalItems: Int = 0
-    
     private var suscriptor = Set<AnyCancellable>()
+    @Published var isLoading: Bool = true
 
     
     init(apiCalls: ApiCalls = ApiCalls()) {
@@ -30,6 +29,7 @@ class PrincipalViewModel: ObservableObject {
                         switch completion {
                         case .finished:
                             print("Finalizada carga")
+                            self.isLoading = false
                         case.failure(let error):
                             print(error.localizedDescription)
                         }

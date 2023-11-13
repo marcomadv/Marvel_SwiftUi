@@ -41,6 +41,9 @@ final class Marvel_SwifUiTests: XCTestCase {
         XCTAssertEqual(modelSeries.description, nil)
         XCTAssertEqual(modelSeries.startYear, 2013)
         XCTAssertEqual(modelSeries.rating, "")
+        
+        let compoundUrl = Thumbnail(path: MockDataCharacter().characterOne.thumbnail?.path, thumbnailExtension: MockDataCharacter().characterOne.thumbnail?.thumbnailExtension).urlPhoto
+        XCTAssertEqual(compoundUrl, URL(string: "http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg"))
     }
     
     func testUIViews() throws {

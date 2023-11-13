@@ -24,7 +24,7 @@ struct PrincipalRowView: View {
                     .shadow(color: .black, radius: 15, x: 5, y: 5)
                     .overlay(
                 Text(character.name ?? "")
-                    .frame(width: 250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 250, height: 50, alignment: .center)
                     .font(.title3).background(.ultraThinMaterial)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)

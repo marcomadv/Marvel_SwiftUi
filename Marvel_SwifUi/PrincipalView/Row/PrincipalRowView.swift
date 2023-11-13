@@ -35,8 +35,8 @@ struct PrincipalRowView: View {
                    .frame(width: 200, height: 200, alignment: .center)
             }
         }
-        .padding([.top, .bottom], 10)
         
+        .padding([.top, .bottom], 10)
     }
 }
 

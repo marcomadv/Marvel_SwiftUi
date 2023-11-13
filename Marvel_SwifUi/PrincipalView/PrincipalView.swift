@@ -10,6 +10,7 @@ import SwiftUI
 struct PrincipalView: View {
     @StateObject var viewModel: PrincipalViewModel
     
+    
     var body: some View {
         NavigationStack{
             List{

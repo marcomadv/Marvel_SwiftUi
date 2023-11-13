@@ -11,6 +11,7 @@ struct ProgressViewPersonalized: View {
     var body: some View {
         ProgressView("Loading Series...")
             .font(.title2)
+            .id(0)
     }
 }
 

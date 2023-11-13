@@ -51,4 +51,12 @@ class PrincipalViewModel: ObservableObject {
         }
         loadCharacters()
     }
+    
+    func loadCharacterTesting(){
+        let character1 = MockDataCharacter().characterOne
+        let character2 = MockDataCharacter().characterTwo
+        let character3 = MockDataCharacter().characterThree
+        
+        self.characters = [character1, character2, character3]
+    }
 }

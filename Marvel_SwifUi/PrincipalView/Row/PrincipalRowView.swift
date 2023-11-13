@@ -22,6 +22,7 @@ struct PrincipalRowView: View {
                     .brightness(0.07)
                     .contrast(1.15)
                     .shadow(color: .black, radius: 15, x: 5, y: 5)
+                    .id(0)
                     .overlay(
                 Text(character.name ?? "")
                     .frame(width: 250, height: 50, alignment: .center)
@@ -32,6 +33,7 @@ struct PrincipalRowView: View {
                     .foregroundColor(.white)
                     .bold()
                     .padding([.top], 200)
+                    .id(1)
            )} placeholder: {
                 ProgressView()
                    .frame(width: 200, height: 200, alignment: .center)

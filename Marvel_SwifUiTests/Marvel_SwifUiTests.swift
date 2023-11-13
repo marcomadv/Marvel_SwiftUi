@@ -68,23 +68,29 @@ final class Marvel_SwifUiTests: XCTestCase {
         let totalItemlaunchScreenView = try launchScreen.inspect().count
         XCTAssertEqual(totalItemlaunchScreenView, 1)
         
-        let imgOne = try view.inspect().find(viewWithId: 0)
+        let imgOne = try launchScreen.inspect().find(viewWithId: 0)
         XCTAssertNotNil(imgOne)
         
-        let imgTwo = try view.inspect().find(viewWithId: 1)
+        let imgTwo = try launchScreen.inspect().find(viewWithId: 1)
         XCTAssertNotNil(imgTwo)
         
         let detailRowView = DetailRowView(serie: MockDataSeries().serieOne)
         XCTAssertNotNil(detailRowView)
         
-        let imgDetail = try view.inspect().find(viewWithId: 0)
+        let imgDetail = try detailRowView.inspect().find(viewWithId: 0)
         XCTAssertNotNil(imgDetail)
         
-        let textSerie = try view.inspect().find(viewWithId: 1)
+        let textSerie = try detailRowView.inspect().find(viewWithId: 1)
         XCTAssertNotNil(textSerie)
         
         let countItems = try detailRowView.inspect().count
         XCTAssertEqual(countItems, 1)
+        
+        let detailView = DetailView(viewModel: DetailViewModel(characterID: MockDataCharacter().characterOne.id!))
+        XCTAssertNotNil(detailView)
+        
+        let item1 = try detailView.inspect().find(viewWithId: 0)
+        XCTAssertNotNil(item1)
     }
     
     func testViewModelCharacter() throws {

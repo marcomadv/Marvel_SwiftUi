@@ -15,6 +15,7 @@ struct DetailView: View {
     var body: some View {
         if viewModel.isLoading {
             ProgressViewPersonalized()
+                .id(0)
         } else {
             VStack{
                 ScrollView{

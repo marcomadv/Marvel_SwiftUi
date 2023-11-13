@@ -18,11 +18,13 @@ struct DetailRowView: View {
                     .frame(width: 350, height: 450, alignment: .center)
                     .cornerRadius(20)
                     .opacity(0.85)
+                    .id(0)
                     .overlay(
                         Text(serie.title ?? "")
                             .font(.title2).background(.thinMaterial).cornerRadius(5)
                             .foregroundColor(.black)
                             .bold()
+                            .id(1)
                     )
                 } placeholder: {
                     ProgressView()

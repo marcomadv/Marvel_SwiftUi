@@ -12,24 +12,6 @@ struct DetailRowView: View {
     var serie: Serie
     var body: some View {
         ZStack{
-#if os (watchOS)
-            AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in
-                photo
-                    .resizable()
-                    .frame(width: 200, height: 260, alignment: .center)
-                    .cornerRadius(20)
-                    .opacity(0.85)
-                    .overlay(
-                        Text(serie.title ?? "")
-                            .frame(width: 180, height: 30, alignment: .center)
-                            .font(.callout).background(.thinMaterial).cornerRadius(5)
-                            .foregroundColor(.white)
-                            .bold()
-                    )
-            } placeholder: {
-                ProgressView()
-            }
-#else
             AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in
                 photo
                     .resizable()
@@ -59,7 +41,6 @@ struct DetailRowView: View {
                         .padding(.top, 300)
                 }
             }
-#endif
         }
         .shadow(radius: 10, y: 10)
         .padding([.top, .bottom], 15)

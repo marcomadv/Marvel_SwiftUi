@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A92724082B02299500C0911B /* CornersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92724072B02299500C0911B /* CornersExtension.swift */; };
+		A9342C4A2B04EAFE00A7D243 /* DetailRowViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD54612B04E9AB008B2FCA /* DetailRowViewWatch.swift */; };
 		A95869832B02A080005FBDAE /* ProgressViewPersonalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */; };
 		A95869892B02A2D2005FBDAE /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = A95869882B02A2D2005FBDAE /* ViewInspector */; };
 		A9A69AC42B02AC6D00BDAE1F /* Marvel-SwifUi-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F2A7352AFFD835003C141F /* Marvel-SwifUi-Info.plist */; };
@@ -27,7 +28,6 @@
 		A9DD54452B04C514008B2FCA /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A73A2AFFE60F003C141F /* Series.swift */; };
 		A9DD54462B04C5D5008B2FCA /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A6FE2AFF9B22003C141F /* PrincipalView.swift */; };
 		A9DD54472B04C5FB008B2FCA /* PrincipalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7442AFFF6DA003C141F /* PrincipalViewModel.swift */; };
-		A9DD54482B04C60B008B2FCA /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */; };
 		A9DD54492B04C685008B2FCA /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A74A2B000DE2003C141F /* DetailViewModel.swift */; };
 		A9DD544A2B04C68C008B2FCA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7472B000DCD003C141F /* DetailView.swift */; };
 		A9DD544B2B04C68F008B2FCA /* ApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7412AFFF139003C141F /* ApiCalls.swift */; };
@@ -35,8 +35,8 @@
 		A9DD544D2B04C6B5008B2FCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A73E2AFFED3F003C141F /* Constants.swift */; };
 		A9DD544E2B04C6DD008B2FCA /* MD5Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A72E2AFF9CA7003C141F /* MD5Converter.swift */; };
 		A9DD544F2B04C6EC008B2FCA /* ProgressViewPersonalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */; };
-		A9DD54502B04C7D0008B2FCA /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7522B00F955003C141F /* DetailRowView.swift */; };
 		A9DD545C2B04E519008B2FCA /* PrincipalRowViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD545A2B04E4AF008B2FCA /* PrincipalRowViewWatch.swift */; };
+		A9DD54602B04E917008B2FCA /* LaunchScreenWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD545E2B04E8D7008B2FCA /* LaunchScreenWatch.swift */; };
 		A9F2A6FD2AFF9B22003C141F /* Marvel_SwifUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A6FC2AFF9B22003C141F /* Marvel_SwifUiApp.swift */; };
 		A9F2A6FF2AFF9B22003C141F /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A6FE2AFF9B22003C141F /* PrincipalView.swift */; };
 		A9F2A7012AFF9B23003C141F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F2A7002AFF9B23003C141F /* Assets.xcassets */; };
@@ -99,19 +99,21 @@
 
 /* Begin PBXFileReference section */
 		A92724072B02299500C0911B /* CornersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornersExtension.swift; sourceTree = "<group>"; };
+		A9342C472B04EAEC00A7D243 /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel_SwifUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9342C482B04EAEC00A7D243 /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_SwifUiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9342C492B04EAEC00A7D243 /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_SwifUiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewPersonalized.swift; sourceTree = "<group>"; };
 		A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSboard.storyboard; sourceTree = "<group>"; };
-		A9DD54262B04C2FB008B2FCA /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiTests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiTests.xctest; sourceTree = "<absolute>"; };
-		A9DD54272B04C2FB008B2FCA /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiUITests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiUITests.xctest; sourceTree = "<absolute>"; };
 		A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DD542E2B04C3F0008B2FCA /* WatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSApp.swift; sourceTree = "<group>"; };
 		A9DD54302B04C3F0008B2FCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9DD54322B04C3F0008B2FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DD54352B04C3F0008B2FCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A9DD543A2B04C3F0008B2FCA /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Marvel_SwifUi.app; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUi.app; sourceTree = "<absolute>"; };
 		A9DD54592B04DCFA008B2FCA /* WatchOS-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WatchOS-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A9DD545A2B04E4AF008B2FCA /* PrincipalRowViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalRowViewWatch.swift; sourceTree = "<group>"; };
+		A9DD545E2B04E8D7008B2FCA /* LaunchScreenWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenWatch.swift; sourceTree = "<group>"; };
+		A9DD54612B04E9AB008B2FCA /* DetailRowViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowViewWatch.swift; sourceTree = "<group>"; };
 		A9F2A6FC2AFF9B22003C141F /* Marvel_SwifUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiApp.swift; sourceTree = "<group>"; };
 		A9F2A6FE2AFF9B22003C141F /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		A9F2A7002AFF9B23003C141F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */,
+				A9DD545E2B04E8D7008B2FCA /* LaunchScreenWatch.swift */,
 				A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */,
 			);
 			path = LaunchScreen;
@@ -223,6 +226,9 @@
 				A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */,
 				A9DD542D2B04C3F0008B2FCA /* WatchOS Watch App */,
 				A9DD54562B04D7B7008B2FCA /* Frameworks */,
+				A9342C472B04EAEC00A7D243 /* Marvel_SwifUi.app */,
+				A9342C482B04EAEC00A7D243 /* Marvel_SwifUiTests.xctest */,
+				A9342C492B04EAEC00A7D243 /* Marvel_SwifUiUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -390,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				A9F2A7522B00F955003C141F /* DetailRowView.swift */,
+				A9DD54612B04E9AB008B2FCA /* DetailRowViewWatch.swift */,
 			);
 			path = Row;
 			sourceTree = "<group>";
@@ -434,7 +441,7 @@
 			packageProductDependencies = (
 			);
 			productName = Marvel_SwifUi;
-			productReference = A9DD543A2B04C3F0008B2FCA /* Marvel_SwifUi.app */;
+			productReference = A9342C472B04EAEC00A7D243 /* Marvel_SwifUi.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A9F2A7092AFF9B23003C141F /* Marvel_SwifUiTests */ = {
@@ -455,7 +462,7 @@
 				A95869882B02A2D2005FBDAE /* ViewInspector */,
 			);
 			productName = Marvel_SwifUiTests;
-			productReference = A9DD54262B04C2FB008B2FCA /* Marvel_SwifUiTests.xctest */;
+			productReference = A9342C482B04EAEC00A7D243 /* Marvel_SwifUiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A9F2A7132AFF9B23003C141F /* Marvel_SwifUiUITests */ = {
@@ -473,7 +480,7 @@
 			);
 			name = Marvel_SwifUiUITests;
 			productName = Marvel_SwifUiUITests;
-			productReference = A9DD54272B04C2FB008B2FCA /* Marvel_SwifUiUITests.xctest */;
+			productReference = A9342C492B04EAEC00A7D243 /* Marvel_SwifUiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -576,13 +583,13 @@
 				A9DD544E2B04C6DD008B2FCA /* MD5Converter.swift in Sources */,
 				A9DD544A2B04C68C008B2FCA /* DetailView.swift in Sources */,
 				A9DD54442B04C4BD008B2FCA /* CornersExtension.swift in Sources */,
-				A9DD54502B04C7D0008B2FCA /* DetailRowView.swift in Sources */,
 				A9DD54312B04C3F0008B2FCA /* ContentView.swift in Sources */,
+				A9342C4A2B04EAFE00A7D243 /* DetailRowViewWatch.swift in Sources */,
 				A9DD542F2B04C3F0008B2FCA /* WatchOSApp.swift in Sources */,
 				A9DD544B2B04C68F008B2FCA /* ApiCalls.swift in Sources */,
 				A9DD54462B04C5D5008B2FCA /* PrincipalView.swift in Sources */,
+				A9DD54602B04E917008B2FCA /* LaunchScreenWatch.swift in Sources */,
 				A9DD54412B04C43A008B2FCA /* Thumbnail.swift in Sources */,
-				A9DD54482B04C60B008B2FCA /* LaunchScreen.swift in Sources */,
 				A9DD54492B04C685008B2FCA /* DetailViewModel.swift in Sources */,
 				A9DD54452B04C514008B2FCA /* Series.swift in Sources */,
 				A9DD54402B04C438008B2FCA /* Characters.swift in Sources */,

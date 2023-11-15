@@ -12,7 +12,11 @@ struct PrincipalView: View {
     
     var body: some View {
         if viewModel.isLoading{
+            #if os (watchOS)
+            LaunchScreenWatch()
+            #else
             LaunchScreen()
+            #endif
         } else {
             NavigationStack{
                 List{

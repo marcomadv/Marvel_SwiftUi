@@ -1,33 +1,33 @@
 //
-//  LaunchScreen.swift
+//  LaunchScreenWatch.swift
 //  Marvel_SwifUi
 //
-//  Created by Marco Muñoz on 13/11/23.
+//  Created by Marco Muñoz on 15/11/23.
 //
+
 import UIKit
 import SwiftUI
 
-struct LaunchScreen: View {
+struct LaunchScreenWatch: View {
     
     var body: some View {
         VStack{
             ZStack{
+#if os(watchOS)
                 Image("Wallpaper", bundle: nil)
                     .resizable()
-                    .frame(minWidth: 420, idealWidth: 420, maxWidth: .infinity, minHeight: 880, idealHeight: 880, maxHeight: .infinity, alignment: .center)
-                    .id(0)
+                    .frame(width: 200, height: 280, alignment: .center)
                 Image("MarvelLogo", bundle: nil)
                     .resizable()
-                    .frame(width: 250, height: 100, alignment: .center)
+                    .frame(width: 180, height: 100, alignment: .center)
                     .opacity(0.65)
-                    .id(1)
                 ProgressView()
+#endif
             }
         }
     }
 }
-
-
+                
 #Preview {
-    LaunchScreen()
+    LaunchScreenWatch()
 }

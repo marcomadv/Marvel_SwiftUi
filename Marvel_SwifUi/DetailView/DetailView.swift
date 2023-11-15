@@ -21,7 +21,7 @@ struct DetailView: View {
                 ScrollView{
                     ForEach(viewModel.series) { serie in
 #if os (watchOS)
-                        DetailRowView(serie: serie)
+                        DetailRowViewWatch(serie: serie)
 #else
                         DetailRowView(serie: serie)
                             .frame(minWidth: 350, idealWidth: 350, maxWidth: 350, minHeight: 480, idealHeight: 480, maxHeight: 480, alignment: .center)

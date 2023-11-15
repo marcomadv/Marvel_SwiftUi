@@ -12,6 +12,32 @@ struct DetailRowView: View {
     var serie: Serie
     var body: some View {
         ZStack{
+#if os (watchOS)
+            AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in
+                photo
+                    .resizable()
+                    .cornerRadius(20)
+                    .opacity(0.85)
+                    .overlay(
+                        Text(serie.title ?? "")
+                            .font(.title2).background(.thinMaterial).cornerRadius(5)
+                            .foregroundColor(.black)
+                            .bold()
+                    )
+            } placeholder: {
+                ProgressView()
+            }
+            HStack{
+                if serie.description != nil{
+                    Text(serie.description!)
+                        .font(.callout)
+                        .padding([.leading, .trailing], 5)
+                        .background(.ultraThinMaterial).opacity(0.9)
+                        .cornerRadius(20, corners: [.bottomLeft, .bottomRight])
+                        .foregroundStyle(.black)
+                }
+            }
+#else
             AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in
                 photo
                     .resizable()
@@ -26,9 +52,9 @@ struct DetailRowView: View {
                             .bold()
                             .id(1)
                     )
-                } placeholder: {
-                    ProgressView()
-                }
+            } placeholder: {
+                ProgressView()
+            }
             HStack{
                 if serie.description != nil{
                     Text(serie.description!)
@@ -41,6 +67,7 @@ struct DetailRowView: View {
                         .padding(.top, 300)
                 }
             }
+#endif
         }
         .shadow(radius: 10, y: 10)
         .padding([.top, .bottom], 15)

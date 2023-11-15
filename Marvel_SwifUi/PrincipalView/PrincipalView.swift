@@ -20,9 +20,13 @@ struct PrincipalView: View {
                         NavigationLink(destination: {
                             DetailView(viewModel: DetailViewModel(characterID: character.id!))
                         }, label: {
+                            #if os(watchOS)
+                            PrincipalRowView(character: character)
+                            #else
                             PrincipalRowView(character: character)
                                 .frame(minWidth: 400,minHeight: 280, alignment: .center)
                                 .padding(.leading, 15)
+                            #endif
                         })
                         .onAppear {
                             viewModel.loadMoreCharactersIfNeeded(character: character)

@@ -16,26 +16,18 @@ struct DetailRowView: View {
             AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in
                 photo
                     .resizable()
+                    .frame(width: 200, height: 200, alignment: .center)
                     .cornerRadius(20)
                     .opacity(0.85)
                     .overlay(
                         Text(serie.title ?? "")
-                            .font(.title2).background(.thinMaterial).cornerRadius(5)
-                            .foregroundColor(.black)
+                            .frame(width: 180, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .font(.callout).background(.thinMaterial).cornerRadius(5)
+                            .foregroundColor(.white)
                             .bold()
                     )
             } placeholder: {
                 ProgressView()
-            }
-            HStack{
-                if serie.description != nil{
-                    Text(serie.description!)
-                        .font(.callout)
-                        .padding([.leading, .trailing], 5)
-                        .background(.ultraThinMaterial).opacity(0.9)
-                        .cornerRadius(20, corners: [.bottomLeft, .bottomRight])
-                        .foregroundStyle(.black)
-                }
             }
 #else
             AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in

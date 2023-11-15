@@ -20,21 +20,16 @@ struct DetailView: View {
             VStack{
                 ScrollView{
                     ForEach(viewModel.series) { serie in
+#if os (watchOS)
+                        DetailRowView(serie: serie)
+#else
                         DetailRowView(serie: serie)
                             .frame(minWidth: 350, idealWidth: 350, maxWidth: 350, minHeight: 480, idealHeight: 480, maxHeight: 480, alignment: .center)
+#endif
                     }
                 }
-//                .navigationBarTitle("Series", displayMode: .inline)
-//                .navigationBarBackButtonHidden(true)
-//                .navigationBarItems(leading:
-//                                        Button(action: {
-//                    self.presentationMode.wrappedValue.dismiss()
-//                }) {
-//                    HStack {
-//                        Image(systemName: "chevron.backward")
-//                    }
-//                })
             }
+            .navigationTitle("Series").navigationBarTitleDisplayMode(.inline)
         }
     }
 }

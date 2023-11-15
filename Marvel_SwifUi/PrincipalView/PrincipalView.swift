@@ -21,7 +21,7 @@ struct PrincipalView: View {
                             DetailView(viewModel: DetailViewModel(characterID: character.id!))
                         }, label: {
                             #if os(watchOS)
-                            PrincipalRowView(character: character)
+                            PrincipalRowViewWatch(character: character)
                             #else
                             PrincipalRowView(character: character)
                                 .frame(minWidth: 400,minHeight: 280, alignment: .center)

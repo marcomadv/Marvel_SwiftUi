@@ -19,7 +19,6 @@
 		A9DD54332B04C3F0008B2FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DD54322B04C3F0008B2FCA /* Assets.xcassets */; };
 		A9DD54362B04C3F0008B2FCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DD54352B04C3F0008B2FCA /* Preview Assets.xcassets */; };
 		A9DD54392B04C3F0008B2FCA /* WatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A9DD543F2B04C42A008B2FCA /* PrincipalRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A74C2B00D137003C141F /* PrincipalRowView.swift */; };
 		A9DD54402B04C438008B2FCA /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7332AFFD31A003C141F /* Characters.swift */; };
 		A9DD54412B04C43A008B2FCA /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A73C2AFFE775003C141F /* Thumbnail.swift */; };
 		A9DD54422B04C446008B2FCA /* MockDataCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A74F2B00D59D003C141F /* MockDataCharacter.swift */; };
@@ -37,8 +36,7 @@
 		A9DD544E2B04C6DD008B2FCA /* MD5Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A72E2AFF9CA7003C141F /* MD5Converter.swift */; };
 		A9DD544F2B04C6EC008B2FCA /* ProgressViewPersonalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */; };
 		A9DD54502B04C7D0008B2FCA /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7522B00F955003C141F /* DetailRowView.swift */; };
-		A9DD54552B04D7A7008B2FCA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A9DD54542B04D7A7008B2FCA /* Kingfisher */; };
-		A9DD54582B04D7B7008B2FCA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A9DD54572B04D7B7008B2FCA /* Kingfisher */; };
+		A9DD545C2B04E519008B2FCA /* PrincipalRowViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD545A2B04E4AF008B2FCA /* PrincipalRowViewWatch.swift */; };
 		A9F2A6FD2AFF9B22003C141F /* Marvel_SwifUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A6FC2AFF9B22003C141F /* Marvel_SwifUiApp.swift */; };
 		A9F2A6FF2AFF9B22003C141F /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A6FE2AFF9B22003C141F /* PrincipalView.swift */; };
 		A9F2A7012AFF9B23003C141F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F2A7002AFF9B23003C141F /* Assets.xcassets */; };
@@ -113,6 +111,7 @@
 		A9DD54352B04C3F0008B2FCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9DD543A2B04C3F0008B2FCA /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Marvel_SwifUi.app; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUi.app; sourceTree = "<absolute>"; };
 		A9DD54592B04DCFA008B2FCA /* WatchOS-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WatchOS-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A9DD545A2B04E4AF008B2FCA /* PrincipalRowViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalRowViewWatch.swift; sourceTree = "<group>"; };
 		A9F2A6FC2AFF9B22003C141F /* Marvel_SwifUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwifUiApp.swift; sourceTree = "<group>"; };
 		A9F2A6FE2AFF9B22003C141F /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		A9F2A7002AFF9B23003C141F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,7 +142,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DD54552B04D7A7008B2FCA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DD54582B04D7B7008B2FCA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				A9F2A74C2B00D137003C141F /* PrincipalRowView.swift */,
+				A9DD545A2B04E4AF008B2FCA /* PrincipalRowViewWatch.swift */,
 			);
 			path = Row;
 			sourceTree = "<group>";
@@ -413,7 +411,6 @@
 			);
 			name = "WatchOS Watch App";
 			packageProductDependencies = (
-				A9DD54542B04D7A7008B2FCA /* Kingfisher */,
 			);
 			productName = "WatchOS Watch App";
 			productReference = A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */;
@@ -435,7 +432,6 @@
 			);
 			name = Marvel_SwifUi;
 			packageProductDependencies = (
-				A9DD54572B04D7B7008B2FCA /* Kingfisher */,
 			);
 			productName = Marvel_SwifUi;
 			productReference = A9DD543A2B04C3F0008B2FCA /* Marvel_SwifUi.app */;
@@ -517,7 +513,6 @@
 			mainGroup = A9F2A6F02AFF9B22003C141F;
 			packageReferences = (
 				A95869842B02A2CB005FBDAE /* XCRemoteSwiftPackageReference "ViewInspector" */,
-				A9DD54532B04D7A7008B2FCA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = A9F2A6F02AFF9B22003C141F;
 			projectDirPath = "";
@@ -575,8 +570,8 @@
 			files = (
 				A9DD544C2B04C6AA008B2FCA /* BaseRequest.swift in Sources */,
 				A9DD544D2B04C6B5008B2FCA /* Constants.swift in Sources */,
-				A9DD543F2B04C42A008B2FCA /* PrincipalRowView.swift in Sources */,
 				A9DD54472B04C5FB008B2FCA /* PrincipalViewModel.swift in Sources */,
+				A9DD545C2B04E519008B2FCA /* PrincipalRowViewWatch.swift in Sources */,
 				A9DD54432B04C449008B2FCA /* MockDataSeries.swift in Sources */,
 				A9DD544E2B04C6DD008B2FCA /* MD5Converter.swift in Sources */,
 				A9DD544A2B04C68C008B2FCA /* DetailView.swift in Sources */,
@@ -1068,14 +1063,6 @@
 				minimumVersion = 0.9.8;
 			};
 		};
-		A9DD54532B04D7A7008B2FCA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.10.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1083,16 +1070,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A95869842B02A2CB005FBDAE /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
-		};
-		A9DD54542B04D7A7008B2FCA /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A9DD54532B04D7A7008B2FCA /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		A9DD54572B04D7B7008B2FCA /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A9DD54532B04D7A7008B2FCA /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

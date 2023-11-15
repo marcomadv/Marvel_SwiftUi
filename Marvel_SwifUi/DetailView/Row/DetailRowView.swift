@@ -16,12 +16,12 @@ struct DetailRowView: View {
             AsyncImage(url: serie.thumbnail?.urlPhoto) { photo in
                 photo
                     .resizable()
-                    .frame(width: 200, height: 200, alignment: .center)
+                    .frame(width: 200, height: 260, alignment: .center)
                     .cornerRadius(20)
                     .opacity(0.85)
                     .overlay(
                         Text(serie.title ?? "")
-                            .frame(width: 180, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 180, height: 30, alignment: .center)
                             .font(.callout).background(.thinMaterial).cornerRadius(5)
                             .foregroundColor(.white)
                             .bold()

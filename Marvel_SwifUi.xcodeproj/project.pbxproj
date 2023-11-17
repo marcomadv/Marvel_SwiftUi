@@ -16,7 +16,6 @@
 		A9DACEED2B0230050082CA81 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */; };
 		A9DACEF12B023EE10082CA81 /* LaunchSboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */; };
 		A9DD542F2B04C3F0008B2FCA /* WatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD542E2B04C3F0008B2FCA /* WatchOSApp.swift */; };
-		A9DD54312B04C3F0008B2FCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD54302B04C3F0008B2FCA /* ContentView.swift */; };
 		A9DD54332B04C3F0008B2FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DD54322B04C3F0008B2FCA /* Assets.xcassets */; };
 		A9DD54362B04C3F0008B2FCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DD54352B04C3F0008B2FCA /* Preview Assets.xcassets */; };
 		A9DD54392B04C3F0008B2FCA /* WatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -99,15 +98,14 @@
 
 /* Begin PBXFileReference section */
 		A92724072B02299500C0911B /* CornersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornersExtension.swift; sourceTree = "<group>"; };
-		A9342C542B0505EE00A7D243 /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel_SwifUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9342C552B0505EE00A7D243 /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_SwifUiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9342C562B0505EE00A7D243 /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_SwifUiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9342C542B0505EE00A7D243 /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Marvel_SwifUi.app; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUi.app; sourceTree = "<absolute>"; };
+		A9342C552B0505EE00A7D243 /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiTests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiTests.xctest; sourceTree = "<absolute>"; };
+		A9342C562B0505EE00A7D243 /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiUITests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiUITests.xctest; sourceTree = "<absolute>"; };
 		A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewPersonalized.swift; sourceTree = "<group>"; };
 		A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSboard.storyboard; sourceTree = "<group>"; };
 		A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DD542E2B04C3F0008B2FCA /* WatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSApp.swift; sourceTree = "<group>"; };
-		A9DD54302B04C3F0008B2FCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9DD54322B04C3F0008B2FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DD54352B04C3F0008B2FCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9DD54592B04DCFA008B2FCA /* WatchOS-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WatchOS-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -195,7 +193,6 @@
 			children = (
 				A9DD54592B04DCFA008B2FCA /* WatchOS-Watch-App-Info.plist */,
 				A9DD542E2B04C3F0008B2FCA /* WatchOSApp.swift */,
-				A9DD54302B04C3F0008B2FCA /* ContentView.swift */,
 				A9DD54322B04C3F0008B2FCA /* Assets.xcassets */,
 				A9DD54342B04C3F0008B2FCA /* Preview Content */,
 			);
@@ -210,13 +207,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A9DD54562B04D7B7008B2FCA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A9F2A6F02AFF9B22003C141F = {
 			isa = PBXGroup;
 			children = (
@@ -225,10 +215,6 @@
 				A9F2A7172AFF9B23003C141F /* Marvel_SwifUiUITests */,
 				A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */,
 				A9DD542D2B04C3F0008B2FCA /* WatchOS Watch App */,
-				A9DD54562B04D7B7008B2FCA /* Frameworks */,
-				A9342C542B0505EE00A7D243 /* Marvel_SwifUi.app */,
-				A9342C552B0505EE00A7D243 /* Marvel_SwifUiTests.xctest */,
-				A9342C562B0505EE00A7D243 /* Marvel_SwifUiUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -583,7 +569,6 @@
 				A9DD544E2B04C6DD008B2FCA /* MD5Converter.swift in Sources */,
 				A9DD544A2B04C68C008B2FCA /* DetailView.swift in Sources */,
 				A9DD54442B04C4BD008B2FCA /* CornersExtension.swift in Sources */,
-				A9DD54312B04C3F0008B2FCA /* ContentView.swift in Sources */,
 				A9342C4A2B04EAFE00A7D243 /* DetailRowViewWatch.swift in Sources */,
 				A9DD542F2B04C3F0008B2FCA /* WatchOSApp.swift in Sources */,
 				A9DD544B2B04C68F008B2FCA /* ApiCalls.swift in Sources */,

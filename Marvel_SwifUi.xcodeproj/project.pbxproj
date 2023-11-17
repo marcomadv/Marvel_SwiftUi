@@ -11,6 +11,8 @@
 		A9342C4A2B04EAFE00A7D243 /* DetailRowViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD54612B04E9AB008B2FCA /* DetailRowViewWatch.swift */; };
 		A95869832B02A080005FBDAE /* ProgressViewPersonalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */; };
 		A95869892B02A2D2005FBDAE /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = A95869882B02A2D2005FBDAE /* ViewInspector */; };
+		A968B38B2B079145004A8C07 /* CharacterJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = A968B3892B079145004A8C07 /* CharacterJSON.json */; };
+		A968B38C2B079145004A8C07 /* SeriesJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = A968B38A2B079145004A8C07 /* SeriesJSON.json */; };
 		A9A69AC62B02AC8300BDAE1F /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7522B00F955003C141F /* DetailRowView.swift */; };
 		A9DACEED2B0230050082CA81 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */; };
 		A9DACEF12B023EE10082CA81 /* LaunchSboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */; };
@@ -98,9 +100,11 @@
 /* Begin PBXFileReference section */
 		A92724072B02299500C0911B /* CornersExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornersExtension.swift; sourceTree = "<group>"; };
 		A95869822B02A080005FBDAE /* ProgressViewPersonalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewPersonalized.swift; sourceTree = "<group>"; };
-		A968B3802B0781AE004A8C07 /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Marvel_SwifUi.app; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUi.app; sourceTree = "<absolute>"; };
-		A968B3812B0781AE004A8C07 /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiTests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiTests.xctest; sourceTree = "<absolute>"; };
-		A968B3822B0781AE004A8C07 /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Marvel_SwifUiUITests.xctest; path = /Users/marco/Desktop/Marvel_SwifUi/build/Debug/Marvel_SwifUiUITests.xctest; sourceTree = "<absolute>"; };
+		A968B3862B078D9A004A8C07 /* Marvel_SwifUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel_SwifUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A968B3872B078D9A004A8C07 /* Marvel_SwifUiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_SwifUiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A968B3882B078D9A004A8C07 /* Marvel_SwifUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvel_SwifUiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A968B3892B079145004A8C07 /* CharacterJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CharacterJSON.json; path = ../../CharacterJSON.json; sourceTree = "<group>"; };
+		A968B38A2B079145004A8C07 /* SeriesJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SeriesJSON.json; path = ../../SeriesJSON.json; sourceTree = "<group>"; };
 		A9DACEEC2B0230050082CA81 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		A9DACEF02B023EE10082CA81 /* LaunchSboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchSboard.storyboard; sourceTree = "<group>"; };
 		A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +218,9 @@
 				A9F2A7172AFF9B23003C141F /* Marvel_SwifUiUITests */,
 				A9DD542C2B04C3F0008B2FCA /* WatchOS Watch App.app */,
 				A9DD542D2B04C3F0008B2FCA /* WatchOS Watch App */,
+				A968B3862B078D9A004A8C07 /* Marvel_SwifUi.app */,
+				A968B3872B078D9A004A8C07 /* Marvel_SwifUiTests.xctest */,
+				A968B3882B078D9A004A8C07 /* Marvel_SwifUiUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,6 +255,8 @@
 		A9F2A70D2AFF9B23003C141F /* Marvel_SwifUiTests */ = {
 			isa = PBXGroup;
 			children = (
+				A968B3892B079145004A8C07 /* CharacterJSON.json */,
+				A968B38A2B079145004A8C07 /* SeriesJSON.json */,
 				A9F2A70E2AFF9B23003C141F /* Marvel_SwifUiTests.swift */,
 			);
 			path = Marvel_SwifUiTests;
@@ -426,7 +435,7 @@
 			packageProductDependencies = (
 			);
 			productName = Marvel_SwifUi;
-			productReference = A968B3802B0781AE004A8C07 /* Marvel_SwifUi.app */;
+			productReference = A968B3862B078D9A004A8C07 /* Marvel_SwifUi.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A9F2A7092AFF9B23003C141F /* Marvel_SwifUiTests */ = {
@@ -447,7 +456,7 @@
 				A95869882B02A2D2005FBDAE /* ViewInspector */,
 			);
 			productName = Marvel_SwifUiTests;
-			productReference = A968B3812B0781AE004A8C07 /* Marvel_SwifUiTests.xctest */;
+			productReference = A968B3872B078D9A004A8C07 /* Marvel_SwifUiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A9F2A7132AFF9B23003C141F /* Marvel_SwifUiUITests */ = {
@@ -465,7 +474,7 @@
 			);
 			name = Marvel_SwifUiUITests;
 			productName = Marvel_SwifUiUITests;
-			productReference = A968B3822B0781AE004A8C07 /* Marvel_SwifUiUITests.xctest */;
+			productReference = A968B3882B078D9A004A8C07 /* Marvel_SwifUiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -542,6 +551,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A968B38C2B079145004A8C07 /* SeriesJSON.json in Resources */,
+				A968B38B2B079145004A8C07 /* CharacterJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

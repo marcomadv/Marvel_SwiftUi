@@ -43,12 +43,4 @@ class DetailViewModel: ObservableObject {
             debugPrint(error.localizedDescription)
         }
     }
-    
-    func loadSeriesTesting(){
-        let serie1 = MockDataSeries().serieOne
-        let serie2 = MockDataSeries().serieTwo
-        let serie3 = MockDataSeries().serieThree
-        
-        self.series = [serie1, serie2, serie3]
-    }
 }

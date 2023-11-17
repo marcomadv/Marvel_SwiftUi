@@ -116,7 +116,6 @@ final class Marvel_SwifUiTests: XCTestCase {
             }
             .store(in: &suscriptor)
         
-        vm.loadCharacterTesting()
         self.waitForExpectations(timeout: 10)
     }
     
@@ -140,8 +139,18 @@ final class Marvel_SwifUiTests: XCTestCase {
             }
             .store(in: &suscriptor)
         
-        vm.loadSeriesTesting()
         self.waitForExpectations(timeout: 10)
         
     }
+}
+
+final class ApicallTest: ApiCallsProtocol {
+    func getCharacters(offset: Int) throws -> AnyPublisher<Marvel_SwifUi.ResponseMarvel, Error> {
+        <#code#>
+    }
+    
+    func getSeries(characterID: Int) throws -> AnyPublisher<Marvel_SwifUi.ResponseSeries, Error> {
+        <#code#>
+    }
+    
 }

@@ -8,7 +8,12 @@
 import Foundation
 import Combine
 
-class ApiCalls {
+protocol ApiCallsProtocol {
+    func getCharacters(offset: Int) throws -> AnyPublisher<ResponseMarvel, Error>
+    func getSeries(characterID: Int) throws -> AnyPublisher<ResponseSeries, Error>
+}
+
+class ApiCalls: ApiCallsProtocol {
     private var session: URLSession
     private var baseRequest: BaseRequest
     

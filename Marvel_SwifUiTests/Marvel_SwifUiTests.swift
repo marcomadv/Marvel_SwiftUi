@@ -141,12 +141,6 @@ final class Marvel_SwifUiTests: XCTestCase {
         
         self.waitForExpectations(timeout: 10)
     }
-    
-//    func testApiCharactersTest() throws {
-//       let characters = try ApicallTest().getCharacters(offset: 0)
-//        XCTAssertNotNil(characters)
-//       
-//    }
 }
 
 final class ApicallTest: ApiCallsProtocol {

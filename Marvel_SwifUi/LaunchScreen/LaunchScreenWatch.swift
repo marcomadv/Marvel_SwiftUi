@@ -14,6 +14,9 @@ struct LaunchScreenWatch: View {
         VStack{
             ZStack{
 #if os(watchOS)
+                Image("Wallpaper", bundle: nil)
+                                  .resizable()
+                                  .frame(width: 200, height: 280, alignment: .center)
                 Image("MarvelLogo", bundle: nil)
                     .resizable()
                     .frame(width: 180, height: 100, alignment: .center)

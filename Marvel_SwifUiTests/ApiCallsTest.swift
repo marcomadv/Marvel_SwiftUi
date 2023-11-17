@@ -100,11 +100,11 @@ final class ApiCallsTest: XCTestCase {
                 }
             } receiveValue: { response in
                 XCTAssertNotNil(response)
-                XCTAssertEqual(response.data?.count, 2)
+                XCTAssertEqual(response.data?.count, 3)
                 let serie = response.data?.results?.first
                 XCTAssertNotNil(serie)
-                XCTAssertEqual(serie?.id, 17765)
-                XCTAssertEqual(serie?.title, "FREE COMIC BOOK DAY 2013 1 (2013)")
+                XCTAssertEqual(serie?.id, 1945)
+                XCTAssertEqual(serie?.title, "Avengers: The Initiative (2007 - 2010)")
             }
         
             .store(in: &suscriptor)

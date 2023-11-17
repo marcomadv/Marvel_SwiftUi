@@ -89,7 +89,7 @@ final class Marvel_SwifUiTests: XCTestCase {
         let countItems = try detailRowView.inspect().count
         XCTAssertEqual(countItems, 1)
         
-        let detailView = DetailView(viewModel: DetailViewModel(characterID: MockDataCharacter().characterOne.id!))
+        let detailView = DetailView(viewModel: DetailViewModel(apiCalls: ApicallTest(), characterID: MockDataCharacter().characterOne.id!))
         XCTAssertNotNil(detailView)
         
         let item1 = try detailView.inspect().find(viewWithId: 0)
@@ -141,6 +141,12 @@ final class Marvel_SwifUiTests: XCTestCase {
         
         self.waitForExpectations(timeout: 10)
     }
+    
+//    func testApiCharactersTest() throws {
+//       let characters = try ApicallTest().getCharacters(offset: 0)
+//        XCTAssertNotNil(characters)
+//       
+//    }
 }
 
 final class ApicallTest: ApiCallsProtocol {

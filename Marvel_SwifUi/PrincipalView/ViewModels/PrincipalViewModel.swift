@@ -9,14 +9,14 @@ import Foundation
 import Combine
 
 class PrincipalViewModel: ObservableObject {
-    private var apiCalls: ApiCalls
+    private var apiCalls: ApiCallsProtocol
     @Published var characters: [Character] = []
     private var totalItems: Int = 0
     private var suscriptor = Set<AnyCancellable>()
     @Published var isLoading: Bool = true
 
     
-    init(apiCalls: ApiCalls = ApiCalls()) {
+    init(apiCalls: ApiCallsProtocol = ApiCalls()) {
         self.apiCalls = apiCalls
         loadCharacters()
         

@@ -99,7 +99,7 @@ final class Marvel_SwifUiTests: XCTestCase {
     func testViewModelCharacter() throws {
         let expectation = self.expectation(description: "Load Characters")
         var suscriptor = Set<AnyCancellable>()
-        let vm = PrincipalViewModel()
+        let vm = PrincipalViewModel(apiCalls: ApicallTest())
         XCTAssertNotNil(vm)
         vm.characters.publisher
             .sink { completion in
@@ -122,7 +122,7 @@ final class Marvel_SwifUiTests: XCTestCase {
     func testViewModelSeries() throws {
         let expectation = self.expectation(description: "Load Series")
         var suscriptor = Set<AnyCancellable>()
-        let vm = DetailViewModel(characterID: 1009144)
+        let vm = DetailViewModel(apiCalls: ApicallTest(), characterID: 1011334)
         XCTAssertNotNil(vm)
         vm.series.publisher
             .sink { completion in
@@ -140,17 +140,19 @@ final class Marvel_SwifUiTests: XCTestCase {
             .store(in: &suscriptor)
         
         self.waitForExpectations(timeout: 10)
-        
     }
 }
 
 final class ApicallTest: ApiCallsProtocol {
     func getCharacters(offset: Int) throws -> AnyPublisher<Marvel_SwifUi.ResponseMarvel, Error> {
-        <#code#>
+        let mockCharacterResponse = MockData().characterResponse()
+        let publisher = CurrentValueSubject<ResponseMarvel, Error> (mockCharacterResponse!)
+        return publisher.eraseToAnyPublisher()
     }
     
     func getSeries(characterID: Int) throws -> AnyPublisher<Marvel_SwifUi.ResponseSeries, Error> {
-        <#code#>
+        let mockSeriesResponse = MockData().serieResponse()
+        let publisher = CurrentValueSubject<ResponseSeries, Error>(mockSeriesResponse!)
+        return publisher.eraseToAnyPublisher()
     }
-    
 }

@@ -9,14 +9,14 @@ import Foundation
 import Combine
 
 class DetailViewModel: ObservableObject {
-    private var apiCalls: ApiCalls
+    private var apiCalls: ApiCallsProtocol
     
     @Published var series: [Serie] = []
     private var suscriptor = Set<AnyCancellable>()
     private var characterID: Int
     @Published var isLoading: Bool = true
     
-    init(apiCalls: ApiCalls = ApiCalls(), characterID: Int) {
+    init(apiCalls: ApiCallsProtocol = ApiCalls(), characterID: Int) {
         self.apiCalls = apiCalls
         self.characterID = characterID
         loadSeries()

@@ -111,6 +111,31 @@ final class ApiCallsTest: XCTestCase {
         wait(for: [expectation], timeout: 1)
     }
     
+    func testSeriesError() throws {
+        MockURLProtocol.requestHandler = { request in
+            let data = MockData().seriesData()
+            let response = try XCTUnwrap(self.urlResponseTest(success: false))
+            return (response, data!)
+        }
+        
+        let expectation = expectation(description: "Series loading fail")
+        try sut.getSeries(characterID: 1011334)
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    XCTFail("Waiting for error")
+                case .failure(_):
+                    expectation.fulfill()
+                }
+            } receiveValue: { response in
+                XCTAssertNil(response)
+            }
+        
+            .store(in: &suscriptor)
+        wait(for: [expectation], timeout: 1)
+    }
+    
     private func urlResponseTest(success: Bool) -> HTTPURLResponse? {
         HTTPURLResponse(
             url: (BaseRequest().request(endpoint: .characters)?.url)!,
